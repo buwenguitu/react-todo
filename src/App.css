@@ -1,0 +1,14 @@
+.warp{
+    width: 500px;
+    border: 1px solid #ccc;
+}
+ul{
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 10px;
+}
+li{
+    border: 1px solid #ccc;
+    height: 30px;
+    line-height: 30px;
+}

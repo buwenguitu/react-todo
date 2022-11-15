@@ -22,12 +22,22 @@ export default class App extends Component {
     this.setState({ todos: [todoObj, ...todos] });
   };
 
+  // 删除todo
+  deleteTodo = (id) => {
+    console.log('i11111111d: ', id);
+    this.setState({
+      todos: this.state.todos.filter((_) => {
+        return _.id !== id
+      })
+    })
+  }
+
   render() {
     const { todos } = this.state;
     return (
       <div className="warp">
         <Header addTodo={this.addTodo} />
-        <List todos={todos} />
+        <List todos={todos} deleteTodo={this.deleteTodo} />
       </div>
     );
   }

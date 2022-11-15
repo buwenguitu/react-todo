@@ -13,7 +13,7 @@ export default class index extends Component {
   render() {
     return (
       <div>
-        <input type="text" className="search" onKeyUp={this.handelKeyUp} />
+        <input type="text" className="search" onKeyUp={this.handelKeyUp} placeholder='请添加TODO'/>
       </div>
     );
   }
